@@ -21,10 +21,12 @@ Why mean reversion, not momentum? On the kit's published dev window (136 hourly 
 
 | | Net PnL | Trades | Max drawdown |
 |---|---|---|---|
-| Tiny Bot | see `grade-local` output | | |
-| Buy-and-hold (equal weight) | −$844.38 | — | — |
+| Tiny Bot | **+$33.24** | 42 (21 buys / 21 sells, 6 symbols, win rate 57%) | 4.09% |
+| Buy-and-hold (equal weight, same market model) | −$844.38 | — | — |
 
-(Full numbers are printed by `grade-local`; the final window is 3 fresh UTC days after the deadline, so dev numbers are a guide, not a promise.)
+Fees paid: $99.77 (at 2× fees the net PnL would be −$65.74). Guardrails met (trades, symbols, drawdown). The two grading runs reproduced byte for byte, 0 rejected orders, `result_sha256 9fd0c199895611ccb9249beab88755e4fd45751967bc7dc98d95d89ee0c2f8f7`.
+
+The final window is 3 fresh UTC days after the deadline, so dev numbers are a guide, not a promise.
 
 ## Run it locally
 
